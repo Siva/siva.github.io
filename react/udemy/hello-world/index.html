@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+</head>
+<body>
+
+</body>
+<script type="text/jsx">
+    //Define a class
+    var HelloWorld = React.createClass({
+        render : function() {
+            return <h1>
+                Hello World!
+            </h1>
+        }
+    });
+    // React, please render this class
+    var element = React.createElement(HelloWorld);
+    //React, attach to body
+    React.render(element, document.body);
+</script>
+</html>
