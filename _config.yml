@@ -1,17 +1,17 @@
 # Jekyll configuration
 
-name: Blog Name
-description: Software Developer
+name: Satish Gunnu
+description: Software Dev Manager
 
 # Url is currently only used only for the RSS feed in feed.xml
-url: http://streetturtle.github.io
+url: http://siva.github.io
 #url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
 baseurl: ''
 
 social:
-  github: streetturtle
+  github: siva
   stackoverflow: ''
   linkedin: ''
   instagram: ''
