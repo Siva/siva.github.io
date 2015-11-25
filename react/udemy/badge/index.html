@@ -2,6 +2,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -10,13 +11,17 @@
     //Define a class
     var HelloWorld = React.createClass({
         render : function() {
-            return <h1>
-                Hello World!
-            </h1>
+            return <button className="btn btn-primary" type="button">
+                    {this.props.text} <span className="badge">{this.props.number}</span>
+                    </button>
         }
     });
+    var options = {
+        number: 10,
+        text: 'Sent'
+    }
     // React, please render this class
-    var element = React.createElement(HelloWorld);
+    var element = React.createElement(HelloWorld, options);
     //React, attach to body
     React.render(element, document.body);
 </script>
